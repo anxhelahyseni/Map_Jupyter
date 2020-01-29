@@ -24,12 +24,3 @@ WORKDIR src/
 COPY . .
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
-
-#######################
-## Pull Notebook from container
-#docker pull anxhelah/map_jupyter
-
-
-#######################
-## Start Jupyter notebook
-#docker run -p 8888:8888 anxhelah/map_jupyter
