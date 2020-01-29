@@ -16,7 +16,7 @@ RUN git clone https://github.com/anxhelahyseni/Map_Jupyter.git
 
 #######################
 ## Install Requirements
-RUN pip3 install -r requirements.txt
+#RUN pip3 install -r requirements.txt
 RUN pip3 install jupyter
 
 
