@@ -7,7 +7,6 @@ RUN apt-get install -y build-essential python3.6 python3-pip python3-dev git
 
 #######################
 ## Install Packages
-#RUN pip3 -q install pip –upgrade
 RUN pip3 install ipyleaflet
 
 #######################
@@ -16,9 +15,7 @@ RUN git clone https://github.com/anxhelahyseni/Map_Jupyter.git
 
 #######################
 ## Install Requirements
-#RUN pip3 install -r requirements.txt
 RUN pip3 install jupyter
-
 
 #######################
 ## Working Directory
@@ -26,9 +23,7 @@ RUN mkdir src
 WORKDIR src/
 COPY . .
 
-
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
-
 
 #######################
 ## Pull Notebook from container
