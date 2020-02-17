@@ -13,7 +13,7 @@ RUN pip3 install ipyleaflet
 
 #######################
 ## Install modules
-RUN git clone https://github.com/anxhelahyseni/Map_Jupyter.git
+#RUN git clone https://github.com/anxhelahyseni/Map_Jupyter.git
 
 #######################
 ## Install Requirements
