@@ -23,4 +23,4 @@ RUN mkdir src
 WORKDIR src/
 COPY map.ipynb /
 
-CMD ["jupyter", "notebook/map.ipynb", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "./map.ipynb", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
