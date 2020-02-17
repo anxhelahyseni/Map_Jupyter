@@ -26,4 +26,4 @@ RUN mkdir src
 WORKDIR src/
 COPY . .
 
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["voila", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
