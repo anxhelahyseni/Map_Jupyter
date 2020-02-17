@@ -22,7 +22,7 @@ RUN pip3 install jupyter
 #######################
 ## Working Directory
 RUN mkdir src
-#WORKDIR src/
+WORKDIR src/
 COPY . .
 
-CMD ["jupyter", "./src/map.ipynb", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
