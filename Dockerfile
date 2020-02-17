@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+MAINTAINER Anxhela Hyseni <anxhela.hyseni1996@gmail.com>
+
 #######################
 ## Install Dependancies
 RUN apt-get update && apt-get -y update
@@ -20,7 +22,7 @@ RUN pip3 install jupyter
 #######################
 ## Working Directory
 RUN mkdir src
-WORKDIR src/
+#WORKDIR src/
 COPY . .
 
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "./src/map.ipynb", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
